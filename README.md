@@ -1,2 +1,1 @@
-# GoMan
-PacMan Clone That I'm doing for fun 
+"Chewing, Breadstick, Single, B.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
