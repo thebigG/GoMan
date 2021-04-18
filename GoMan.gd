@@ -34,6 +34,6 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	print("_on_Area2D_body_exited")
-	can_i_move = false
+	can_i_move = true
 
 
