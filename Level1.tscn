@@ -22,7 +22,7 @@ extents = Vector2( 159.999, 79.999 )
 script = ExtResource( 5 )
 
 [node name="Walls" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 1114138, 5, 0, 1114139, 5, 0, 1114140, 5, 0, 1114141, 5, 0, 1114142, 5, 0, 1114143, 5, 0, 1114144, 5, 0, 1114145, 5, 0, 1114146, 5, 0, 1114147, 5, 0, 1114148, 5, 0, 1114149, 5, 0, 1114150, 5, 0, 1114151, 5, 0, 1114152, 5, 0, 1114153, 5, 0, 1114154, 5, 0, 1114155, 5, 0, 1114156, 5, 0, 1114157, 5, 0, 1114158, 5, 0, 1114159, 5, 0, 1114160, 5, 0, 1114161, 5, 0, 1114162, 5, 0, 1114163, 5, 0, 1114164, 5, 0, 1114165, 5, 0, 1114166, 5, 0, 1114167, 5, 0, 1114168, 5, 0, 1114169, 5, 0, 1114170, 5, 0, 1114171, 5, 0, 1114172, 5, 0, 1114173, 5, 0, 1114174, 5, 0, 1114175, 5, 0, 1114176, 5, 0, 1114177, 5, 0, 1114178, 5, 0, 1114179, 5, 0, 1114180, 5, 0, 1114181, 5, 0, 1114182, 5, 0, 1114183, 5, 0, 1114184, 5, 0, 1114185, 5, 0, 1114186, 5, 0, 1114187, 5, 0, 1114188, 5, 0, 1179674, 5, 0, 1179698, 5, 0, 1179724, 5, 0, 1245210, 5, 0, 1245234, 5, 0, 1245260, 5, 0, 1310746, 5, 0, 1310770, 5, 0, 1310796, 5, 0, 1376282, 5, 0, 1376287, 5, 0, 1376288, 5, 0, 1376289, 5, 0, 1376290, 5, 0, 1376291, 5, 0, 1376292, 5, 0, 1376312, 5, 0, 1376313, 5, 0, 1376314, 5, 0, 1376315, 5, 0, 1376316, 5, 0, 1376317, 5, 0, 1376318, 5, 0, 1376319, 5, 0, 1376323, 5, 0, 1376324, 5, 0, 1376325, 5, 0, 1376326, 5, 0, 1376327, 5, 0, 1376328, 5, 0, 1376332, 5, 0, 1441818, 5, 0, 1441823, 5, 0, 1441828, 5, 0, 1441848, 5, 0, 1441855, 5, 0, 1441859, 5, 0, 1441864, 5, 0, 1441868, 5, 0, 1507354, 5, 0, 1507359, 5, 0, 1507364, 5, 0, 1507384, 5, 0, 1507391, 5, 0, 1507395, 5, 0, 1507400, 5, 0, 1507404, 5, 0, 1572890, 5, 0, 1572895, 5, 0, 1572896, 5, 0, 1572897, 5, 0, 1572898, 5, 0, 1572899, 5, 0, 1572900, 5, 0, 1572914, 5, 0, 1572920, 5, 0, 1572921, 5, 0, 1572922, 5, 0, 1572923, 5, 0, 1572924, 5, 0, 1572925, 5, 0, 1572926, 5, 0, 1572927, 5, 0, 1572931, 5, 0, 1572932, 5, 0, 1572933, 5, 0, 1572934, 5, 0, 1572935, 5, 0, 1572936, 5, 0, 1572940, 5, 0, 1638426, 5, 0, 1638450, 5, 0, 1638476, 5, 0, 1703962, 5, 0, 1703986, 5, 0, 1704012, 5, 0, 1769498, 5, 0, 1769522, 5, 0, 1769548, 5, 0, 1835034, 5, 0, 1835058, 5, 0, 1835067, 5, 0, 1835084, 5, 0, 1900570, 5, 0, 1900594, 5, 0, 1900603, 5, 0, 1900620, 5, 0, 1966106, 5, 0, 1966139, 5, 0, 1966156, 5, 0, 2031642, 5, 0, 2031675, 5, 0, 2031692, 5, 0, 2097178, 5, 0, 2097211, 5, 0, 2097228, 5, 0, 2162714, 5, 0, 2162747, 5, 0, 2162764, 5, 0, 2228250, 5, 0, 2228283, 5, 0, 2228300, 5, 0, 2293786, 5, 0, 2293836, 5, 0, 2359322, 5, 0, 2359372, 5, 0, 2424858, 5, 0, 2424879, 5, 0, 2424880, 5, 0, 2424881, 5, 0, 2424885, 5, 0, 2424886, 5, 0, 2424887, 5, 0, 2424908, 5, 0, 2490394, 5, 0, 2490411, 5, 0, 2490415, 5, 0, 2490423, 5, 0, 2490427, 5, 0, 2490444, 5, 0, 2555930, 5, 0, 2555947, 5, 0, 2555951, 5, 0, 2555959, 5, 0, 2555963, 5, 0, 2555980, 5, 0, 2621466, 5, 0, 2621483, 5, 0, 2621487, 5, 0, 2621495, 5, 0, 2621499, 5, 0, 2621516, 5, 0, 2687002, 5, 0, 2687019, 5, 0, 2687023, 5, 0, 2687031, 5, 0, 2687035, 5, 0, 2687052, 5, 0, 2752538, 5, 0, 2752555, 5, 0, 2752559, 5, 0, 2752567, 5, 0, 2752571, 5, 0, 2752588, 5, 0, 2818074, 5, 0, 2818091, 5, 0, 2818095, 5, 0, 2818096, 5, 0, 2818097, 5, 0, 2818098, 5, 0, 2818099, 5, 0, 2818100, 5, 0, 2818101, 5, 0, 2818102, 5, 0, 2818103, 5, 0, 2818107, 5, 0, 2818124, 5, 0, 2883610, 5, 0, 2883627, 5, 0, 2883643, 5, 0, 2883660, 5, 0, 2949146, 5, 0, 2949163, 5, 0, 2949179, 5, 0, 2949196, 5, 0, 3014682, 5, 0, 3014699, 5, 0, 3014715, 5, 0, 3014732, 5, 0, 3080218, 5, 0, 3080235, 5, 0, 3080239, 5, 0, 3080240, 5, 0, 3080241, 5, 0, 3080242, 5, 0, 3080243, 5, 0, 3080244, 5, 0, 3080245, 5, 0, 3080246, 5, 0, 3080247, 5, 0, 3080248, 5, 0, 3080251, 5, 0, 3080268, 5, 0, 3145754, 5, 0, 3145779, 5, 0, 3145804, 5, 0, 3211290, 5, 0, 3211315, 5, 0, 3211340, 5, 0, 3276826, 5, 0, 3276851, 5, 0, 3276876, 5, 0, 3342362, 5, 0, 3342387, 5, 0, 3342412, 5, 0, 3407898, 5, 0, 3407923, 5, 0, 3407948, 5, 0, 3473434, 5, 0, 3473453, 5, 0, 3473454, 5, 0, 3473455, 5, 0, 3473459, 5, 0, 3473463, 5, 0, 3473464, 5, 0, 3473465, 5, 0, 3473484, 5, 0, 3538970, 5, 0, 3539020, 5, 0, 3604506, 5, 0, 3604556, 5, 0, 3670042, 5, 0, 3670092, 5, 0, 3735578, 5, 0, 3735586, 5, 0, 3735597, 5, 0, 3735601, 5, 0, 3735602, 5, 0, 3735603, 5, 0, 3735604, 5, 0, 3735605, 5, 0, 3735609, 5, 0, 3735620, 5, 0, 3735628, 5, 0, 3801114, 5, 0, 3801122, 5, 0, 3801133, 5, 0, 3801139, 5, 0, 3801145, 5, 0, 3801156, 5, 0, 3801164, 5, 0, 3866650, 5, 0, 3866654, 5, 0, 3866655, 5, 0, 3866656, 5, 0, 3866657, 5, 0, 3866658, 5, 0, 3866662, 5, 0, 3866663, 5, 0, 3866664, 5, 0, 3866665, 5, 0, 3866666, 5, 0, 3866667, 5, 0, 3866668, 5, 0, 3866669, 5, 0, 3866670, 5, 0, 3866675, 5, 0, 3866680, 5, 0, 3866681, 5, 0, 3866682, 5, 0, 3866683, 5, 0, 3866684, 5, 0, 3866685, 5, 0, 3866686, 5, 0, 3866687, 5, 0, 3866688, 5, 0, 3866692, 5, 0, 3866693, 5, 0, 3866694, 5, 0, 3866695, 5, 0, 3866696, 5, 0, 3866700, 5, 0, 3932186, 5, 0, 3932236, 5, 0, 3997722, 5, 0, 3997772, 5, 0, 4063258, 5, 0, 4063308, 5, 0, 4128794, 5, 0, 4128795, 5, 0, 4128796, 5, 0, 4128797, 5, 0, 4128798, 5, 0, 4128799, 5, 0, 4128800, 5, 0, 4128801, 5, 0, 4128802, 5, 0, 4128803, 5, 0, 4128804, 5, 0, 4128805, 5, 0, 4128806, 5, 0, 4128807, 5, 0, 4128808, 5, 0, 4128809, 5, 0, 4128810, 5, 0, 4128811, 5, 0, 4128812, 5, 0, 4128813, 5, 0, 4128814, 5, 0, 4128815, 5, 0, 4128816, 5, 0, 4128817, 5, 0, 4128818, 5, 0, 4128819, 5, 0, 4128820, 5, 0, 4128821, 5, 0, 4128822, 5, 0, 4128823, 5, 0, 4128824, 5, 0, 4128825, 5, 0, 4128826, 5, 0, 4128827, 5, 0, 4128828, 5, 0, 4128829, 5, 0, 4128830, 5, 0, 4128831, 5, 0, 4128832, 5, 0, 4128833, 5, 0, 4128834, 5, 0, 4128835, 5, 0, 4128836, 5, 0, 4128837, 5, 0, 4128838, 5, 0, 4128839, 5, 0, 4128840, 5, 0, 4128841, 5, 0, 4128842, 5, 0, 4128843, 5, 0, 4128844, 5, 0 )
+tile_data = PoolIntArray( 1114138, 5, 0, 1114139, 5, 0, 1114140, 5, 0, 1114141, 5, 0, 1114142, 5, 0, 1114143, 5, 0, 1114144, 5, 0, 1114145, 5, 0, 1114146, 5, 0, 1114147, 5, 0, 1114148, 5, 0, 1114149, 5, 0, 1114150, 5, 0, 1114151, 5, 0, 1114152, 5, 0, 1114153, 5, 0, 1114154, 5, 0, 1114155, 5, 0, 1114156, 5, 0, 1114157, 5, 0, 1114158, 5, 0, 1114159, 5, 0, 1114160, 5, 0, 1114161, 5, 0, 1114162, 5, 0, 1114163, 5, 0, 1114164, 5, 0, 1114165, 5, 0, 1114166, 5, 0, 1114167, 5, 0, 1114168, 5, 0, 1114169, 5, 0, 1114170, 5, 0, 1114171, 5, 0, 1114172, 5, 0, 1114173, 5, 0, 1114174, 5, 0, 1114175, 5, 0, 1114176, 5, 0, 1114177, 5, 0, 1114178, 5, 0, 1114179, 5, 0, 1114180, 5, 0, 1114181, 5, 0, 1114182, 5, 0, 1114183, 5, 0, 1114184, 5, 0, 1114185, 5, 0, 1114186, 5, 0, 1114187, 5, 0, 1114188, 5, 0, 1179674, 5, 0, 1179698, 5, 0, 1179724, 5, 0, 1245210, 5, 0, 1245234, 5, 0, 1245260, 5, 0, 1310746, 5, 0, 1310770, 5, 0, 1310796, 5, 0, 1376282, 5, 0, 1376287, 5, 0, 1376288, 5, 0, 1376289, 5, 0, 1376290, 5, 0, 1376291, 5, 0, 1376292, 5, 0, 1376296, 5, 0, 1376297, 5, 0, 1376298, 5, 0, 1376299, 5, 0, 1376300, 5, 0, 1376301, 5, 0, 1376302, 5, 0, 1376312, 5, 0, 1376313, 5, 0, 1376314, 5, 0, 1376315, 5, 0, 1376316, 5, 0, 1376317, 5, 0, 1376318, 5, 0, 1376319, 5, 0, 1376323, 5, 0, 1376324, 5, 0, 1376325, 5, 0, 1376326, 5, 0, 1376327, 5, 0, 1376328, 5, 0, 1376332, 5, 0, 1441818, 5, 0, 1441823, 5, 0, 1441828, 5, 0, 1441832, 5, 0, 1441838, 5, 0, 1441848, 5, 0, 1441855, 5, 0, 1441859, 5, 0, 1441864, 5, 0, 1441868, 5, 0, 1507354, 5, 0, 1507359, 5, 0, 1507360, 5, 0, 1507361, 5, 0, 1507362, 5, 0, 1507363, 5, 0, 1507364, 5, 0, 1507368, 5, 0, 1507369, 5, 0, 1507370, 5, 0, 1507371, 5, 0, 1507372, 5, 0, 1507373, 5, 0, 1507374, 5, 0, 1507384, 5, 0, 1507385, 5, 0, 1507386, 5, 0, 1507387, 5, 0, 1507388, 5, 0, 1507389, 5, 0, 1507390, 5, 0, 1507391, 5, 0, 1507395, 5, 0, 1507396, 5, 0, 1507397, 5, 0, 1507398, 5, 0, 1507399, 5, 0, 1507400, 5, 0, 1507404, 5, 0, 1572890, 5, 0, 1572914, 5, 0, 1572940, 5, 0, 1638426, 5, 0, 1638450, 5, 0, 1638476, 5, 0, 1703962, 5, 0, 1703986, 5, 0, 1704012, 5, 0, 1769498, 5, 0, 1769522, 5, 0, 1769548, 5, 0, 1835034, 5, 0, 1835039, 5, 0, 1835040, 5, 0, 1835041, 5, 0, 1835042, 5, 0, 1835043, 5, 0, 1835044, 5, 0, 1835058, 5, 0, 1835067, 5, 0, 1835084, 5, 0, 1900570, 5, 0, 1900575, 5, 0, 1900580, 5, 0, 1900594, 5, 0, 1900603, 5, 0, 1900620, 5, 0, 1966106, 5, 0, 1966111, 5, 0, 1966116, 5, 0, 1966139, 5, 0, 1966156, 5, 0, 2031642, 5, 0, 2031647, 5, 0, 2031648, 5, 0, 2031649, 5, 0, 2031650, 5, 0, 2031651, 5, 0, 2031652, 5, 0, 2031675, 5, 0, 2031692, 5, 0, 2097178, 5, 0, 2097211, 5, 0, 2097228, 5, 0, 2162714, 5, 0, 2162747, 5, 0, 2162764, 5, 0, 2228250, 5, 0, 2228283, 5, 0, 2228300, 5, 0, 2293786, 5, 0, 2293791, 5, 0, 2293792, 5, 0, 2293793, 5, 0, 2293794, 5, 0, 2293795, 5, 0, 2293796, 5, 0, 2293836, 5, 0, 2359322, 5, 0, 2359327, 5, 0, 2359332, 5, 0, 2359372, 5, 0, 2424858, 5, 0, 2424863, 5, 0, 2424868, 5, 0, 2424879, 5, 0, 2424880, 5, 0, 2424881, 5, 0, 2424885, 5, 0, 2424886, 5, 0, 2424887, 5, 0, 2424908, 5, 0, 2490394, 5, 0, 2490399, 5, 0, 2490404, 5, 0, 2490411, 5, 0, 2490415, 5, 0, 2490423, 5, 0, 2490427, 5, 0, 2490444, 5, 0, 2555930, 5, 0, 2555935, 5, 0, 2555940, 5, 0, 2555947, 5, 0, 2555951, 5, 0, 2555959, 5, 0, 2555963, 5, 0, 2555980, 5, 0, 2621466, 5, 0, 2621483, 5, 0, 2621487, 5, 0, 2621495, 5, 0, 2621499, 5, 0, 2621516, 5, 0, 2687002, 5, 0, 2687019, 5, 0, 2687023, 5, 0, 2687031, 5, 0, 2687035, 5, 0, 2687052, 5, 0, 2752538, 5, 0, 2752555, 5, 0, 2752559, 5, 0, 2752567, 5, 0, 2752571, 5, 0, 2752588, 5, 0, 2818074, 5, 0, 2818080, 5, 0, 2818081, 5, 0, 2818082, 5, 0, 2818091, 5, 0, 2818095, 5, 0, 2818096, 5, 0, 2818097, 5, 0, 2818098, 5, 0, 2818099, 5, 0, 2818100, 5, 0, 2818101, 5, 0, 2818102, 5, 0, 2818103, 5, 0, 2818107, 5, 0, 2818124, 5, 0, 2883610, 5, 0, 2883617, 5, 0, 2883627, 5, 0, 2883643, 5, 0, 2883660, 5, 0, 2949146, 5, 0, 2949153, 5, 0, 2949163, 5, 0, 2949179, 5, 0, 2949196, 5, 0, 3014682, 5, 0, 3014689, 5, 0, 3014699, 5, 0, 3014715, 5, 0, 3014732, 5, 0, 3080218, 5, 0, 3080225, 5, 0, 3080235, 5, 0, 3080239, 5, 0, 3080240, 5, 0, 3080241, 5, 0, 3080242, 5, 0, 3080243, 5, 0, 3080244, 5, 0, 3080245, 5, 0, 3080246, 5, 0, 3080247, 5, 0, 3080248, 5, 0, 3080251, 5, 0, 3080268, 5, 0, 3145754, 5, 0, 3145779, 5, 0, 3145804, 5, 0, 3211290, 5, 0, 3211315, 5, 0, 3211340, 5, 0, 3276826, 5, 0, 3276851, 5, 0, 3276876, 5, 0, 3342362, 5, 0, 3342369, 5, 0, 3342387, 5, 0, 3342412, 5, 0, 3407898, 5, 0, 3407902, 5, 0, 3407903, 5, 0, 3407904, 5, 0, 3407905, 5, 0, 3407906, 5, 0, 3407907, 5, 0, 3407908, 5, 0, 3407923, 5, 0, 3407948, 5, 0, 3473434, 5, 0, 3473453, 5, 0, 3473454, 5, 0, 3473455, 5, 0, 3473459, 5, 0, 3473463, 5, 0, 3473464, 5, 0, 3473465, 5, 0, 3473484, 5, 0, 3538970, 5, 0, 3539020, 5, 0, 3604506, 5, 0, 3604556, 5, 0, 3670042, 5, 0, 3670046, 5, 0, 3670052, 5, 0, 3670092, 5, 0, 3735578, 5, 0, 3735582, 5, 0, 3735588, 5, 0, 3735597, 5, 0, 3735601, 5, 0, 3735602, 5, 0, 3735603, 5, 0, 3735604, 5, 0, 3735605, 5, 0, 3735609, 5, 0, 3735620, 5, 0, 3735628, 5, 0, 3801114, 5, 0, 3801118, 5, 0, 3801124, 5, 0, 3801133, 5, 0, 3801139, 5, 0, 3801145, 5, 0, 3801156, 5, 0, 3801164, 5, 0, 3866650, 5, 0, 3866654, 5, 0, 3866655, 5, 0, 3866656, 5, 0, 3866657, 5, 0, 3866658, 5, 0, 3866659, 5, 0, 3866660, 5, 0, 3866663, 5, 0, 3866664, 5, 0, 3866665, 5, 0, 3866666, 5, 0, 3866667, 5, 0, 3866668, 5, 0, 3866669, 5, 0, 3866670, 5, 0, 3866675, 5, 0, 3866680, 5, 0, 3866681, 5, 0, 3866682, 5, 0, 3866683, 5, 0, 3866684, 5, 0, 3866685, 5, 0, 3866686, 5, 0, 3866687, 5, 0, 3866688, 5, 0, 3866692, 5, 0, 3866693, 5, 0, 3866694, 5, 0, 3866695, 5, 0, 3866696, 5, 0, 3866700, 5, 0, 3932186, 5, 0, 3932236, 5, 0, 3997722, 5, 0, 3997772, 5, 0, 4063258, 5, 0, 4063308, 5, 0, 4128794, 5, 0, 4128795, 5, 0, 4128796, 5, 0, 4128797, 5, 0, 4128798, 5, 0, 4128799, 5, 0, 4128800, 5, 0, 4128801, 5, 0, 4128802, 5, 0, 4128803, 5, 0, 4128804, 5, 0, 4128805, 5, 0, 4128806, 5, 0, 4128807, 5, 0, 4128808, 5, 0, 4128809, 5, 0, 4128810, 5, 0, 4128811, 5, 0, 4128812, 5, 0, 4128813, 5, 0, 4128814, 5, 0, 4128815, 5, 0, 4128816, 5, 0, 4128817, 5, 0, 4128818, 5, 0, 4128819, 5, 0, 4128820, 5, 0, 4128821, 5, 0, 4128822, 5, 0, 4128823, 5, 0, 4128824, 5, 0, 4128825, 5, 0, 4128826, 5, 0, 4128827, 5, 0, 4128828, 5, 0, 4128829, 5, 0, 4128830, 5, 0, 4128831, 5, 0, 4128832, 5, 0, 4128833, 5, 0, 4128834, 5, 0, 4128835, 5, 0, 4128836, 5, 0, 4128837, 5, 0, 4128838, 5, 0, 4128839, 5, 0, 4128840, 5, 0, 4128841, 5, 0, 4128842, 5, 0, 4128843, 5, 0, 4128844, 5, 0 )
 
 [node name="GoMan" type="KinematicBody2D" parent="."]
 position = Vector2( 432, 432 )
@@ -431,6 +431,38 @@ shape = SubResource( 4 )
 [node name="Food" type="Sprite" parent="Food/Food28"]
 texture = ExtResource( 4 )
 
+[node name="Food98" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 256, 435.015 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food98"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food98"]
+texture = ExtResource( 4 )
+
+[node name="Food99" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 435.015 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food99"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food99"]
+texture = ExtResource( 4 )
+
 [node name="Food29" type="Area2D" parent="Food" groups=[
 "Food",
 ]]
@@ -461,6 +493,54 @@ scale = Vector2( 0.7, 1.5 )
 shape = SubResource( 4 )
 
 [node name="Food" type="Sprite" parent="Food/Food30"]
+texture = ExtResource( 4 )
+
+[node name="Food100" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 256, 397 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food100"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food100"]
+texture = ExtResource( 4 )
+
+[node name="Food101" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 397 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food101"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food101"]
+texture = ExtResource( 4 )
+
+[node name="Food102" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 397 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food102"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food102"]
 texture = ExtResource( 4 )
 
 [node name="Food31" type="Area2D" parent="Food" groups=[
@@ -511,6 +591,38 @@ shape = SubResource( 4 )
 [node name="Food" type="Sprite" parent="Food/Food33"]
 texture = ExtResource( 4 )
 
+[node name="Food103" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 256, 335 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food103"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food103"]
+texture = ExtResource( 4 )
+
+[node name="Food104" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 335 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food104"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food104"]
+texture = ExtResource( 4 )
+
 [node name="Food34" type="Area2D" parent="Food" groups=[
 "Food",
 ]]
@@ -541,6 +653,54 @@ scale = Vector2( 0.7, 1.5 )
 shape = SubResource( 4 )
 
 [node name="Food" type="Sprite" parent="Food/Food35"]
+texture = ExtResource( 4 )
+
+[node name="Food105" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 256, 271.375 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food105"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food105"]
+texture = ExtResource( 4 )
+
+[node name="Food106" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 271.375 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food106"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food106"]
+texture = ExtResource( 4 )
+
+[node name="Food107" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 271.375 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food107"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food107"]
 texture = ExtResource( 4 )
 
 [node name="Food36" type="Area2D" parent="Food" groups=[
@@ -589,6 +749,38 @@ scale = Vector2( 0.7, 1.5 )
 shape = SubResource( 4 )
 
 [node name="Food" type="Sprite" parent="Food/Food38"]
+texture = ExtResource( 4 )
+
+[node name="Food82" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 256, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food82"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food82"]
+texture = ExtResource( 4 )
+
+[node name="Food83" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 280, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food83"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food83"]
 texture = ExtResource( 4 )
 
 [node name="Food39" type="Area2D" parent="Food" groups=[
@@ -671,6 +863,438 @@ shape = SubResource( 4 )
 [node name="Food" type="Sprite" parent="Food/Food43"]
 texture = ExtResource( 4 )
 
+[node name="Food69" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 181 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food69"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food69"]
+texture = ExtResource( 4 )
+
+[node name="Food70" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food70"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food70"]
+texture = ExtResource( 4 )
+
+[node name="Food84" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 328, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food84"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food84"]
+texture = ExtResource( 4 )
+
+[node name="Food85" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 352, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food85"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food85"]
+texture = ExtResource( 4 )
+
+[node name="Food86" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 376, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food86"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food86"]
+texture = ExtResource( 4 )
+
+[node name="Food87" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 392, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food87"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food87"]
+texture = ExtResource( 4 )
+
+[node name="Food95" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 392, 181 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food95"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food95"]
+texture = ExtResource( 4 )
+
+[node name="Food88" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 424, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food88"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food88"]
+texture = ExtResource( 4 )
+
+[node name="Food96" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 424, 181 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food96"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food96"]
+texture = ExtResource( 4 )
+
+[node name="Food89" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 448, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food89"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food89"]
+texture = ExtResource( 4 )
+
+[node name="Food90" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 472, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food90"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food90"]
+texture = ExtResource( 4 )
+
+[node name="Food91" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 496, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food91"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food91"]
+texture = ExtResource( 4 )
+
+[node name="Food92" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 520, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food92"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food92"]
+texture = ExtResource( 4 )
+
+[node name="Food97" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 520, 181 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food97"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food97"]
+texture = ExtResource( 4 )
+
+[node name="Food93" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 544, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food93"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food93"]
+texture = ExtResource( 4 )
+
+[node name="Food94" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 568, 205 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food94"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food94"]
+texture = ExtResource( 4 )
+
+[node name="Food71" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 229 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food71"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food71"]
+texture = ExtResource( 4 )
+
+[node name="Food72" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 253 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food72"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food72"]
+texture = ExtResource( 4 )
+
+[node name="Food73" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 277 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food73"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food73"]
+texture = ExtResource( 4 )
+
+[node name="Food74" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 301 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food74"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food74"]
+texture = ExtResource( 4 )
+
+[node name="Food75" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 325 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food75"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food75"]
+texture = ExtResource( 4 )
+
+[node name="Food76" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 349 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food76"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food76"]
+texture = ExtResource( 4 )
+
+[node name="Food77" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 373 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food77"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food77"]
+texture = ExtResource( 4 )
+
+[node name="Food78" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 397 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food78"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food78"]
+texture = ExtResource( 4 )
+
+[node name="Food79" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 421 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food79"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food79"]
+texture = ExtResource( 4 )
+
+[node name="Food80" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 445 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food80"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food80"]
+texture = ExtResource( 4 )
+
+[node name="Food81" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 304, 469 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food81"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food81"]
+texture = ExtResource( 4 )
+
 [node name="Food44" type="Area2D" parent="Food" groups=[
 "Food",
 ]]
@@ -717,6 +1341,22 @@ scale = Vector2( 0.7, 1.5 )
 shape = SubResource( 4 )
 
 [node name="Food" type="Sprite" parent="Food/Food46"]
+texture = ExtResource( 4 )
+
+[node name="Food47" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 392, 157 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food47"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food47"]
 texture = ExtResource( 4 )
 
 [node name="Food48" type="Area2D" parent="Food" groups=[
