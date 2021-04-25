@@ -19,6 +19,11 @@ config/name="GoMan"
 run/main_scene="res://Level1.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=450
+window/size/height=450
+
 [rendering]
 
 environment/default_clear_color=Color( 0, 0, 0, 1 )
