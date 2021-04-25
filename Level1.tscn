@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://1*MtYxc1Ql6uva2z_o1JEe3w.jpeg" type="Texture" id=4]
 [ext_resource path="res://Level1.gd" type="Script" id=5]
 [ext_resource path="res://429593__inspectorj__chewing-breadstick-single-b.wav" type="AudioStream" id=6]
+[ext_resource path="res://StopMan.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 20 )
@@ -17,6 +18,18 @@ extents = Vector2( 8, 8 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 159.999, 79.999 )
+
+[sub_resource type="Shader" id=5]
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 5 )
+
+[sub_resource type="Gradient" id=7]
+offsets = PoolRealArray( 0, 0.00862069, 0.25431, 0.599138, 0.62069, 0.715517, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.331926, 0.331926, 0.331926, 1, 0.383993, 0.383993, 0.383993, 1, 0.875, 0.875, 0.875, 1, 1, 0, 0, 1, 1, 0.204546, 0.204546, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 5 )
@@ -3033,6 +3046,24 @@ position = Vector2( 464, 335 )
 scale = Vector2( 0.5, 0.4 )
 stream = ExtResource( 6 )
 volume_db = 0.061
+
+[node name="StopMan" type="RigidBody2D" parent="."]
+position = Vector2( 32, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan"]
+position = Vector2( 469.625, 400 )
+scale = Vector2( 0.45, 0.36 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="StopMan"]
+material = SubResource( 6 )
+position = Vector2( 472, 399.375 )
+scale = Vector2( 0.27, 0.27 )
+texture = ExtResource( 7 )
+normal_map = SubResource( 8 )
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
 [connection signal="body_entered" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_exited"]
