@@ -146,6 +146,22 @@ shape = SubResource( 4 )
 [node name="Food" type="Sprite" parent="Food/Food4"]
 texture = ExtResource( 4 )
 
+[node name="Food155" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 368, 380 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food155"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food155"]
+texture = ExtResource( 4 )
+
 [node name="Food142" type="Area2D" parent="Food" groups=[
 "Food",
 ]]
@@ -2130,6 +2146,22 @@ scale = Vector2( 0.7, 1.5 )
 shape = SubResource( 4 )
 
 [node name="Food" type="Sprite" parent="Food/Food111"]
+texture = ExtResource( 4 )
+
+[node name="Food184" type="Area2D" parent="Food" groups=[
+"Food",
+]]
+position = Vector2( 400, 421 )
+scale = Vector2( 0.05, 0.05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Food/Food184"]
+scale = Vector2( 0.7, 1.5 )
+shape = SubResource( 4 )
+
+[node name="Food" type="Sprite" parent="Food/Food184"]
 texture = ExtResource( 4 )
 
 [node name="Food79" type="Area2D" parent="Food" groups=[
