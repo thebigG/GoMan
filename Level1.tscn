@@ -3,7 +3,7 @@
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://GoMan.gd" type="Script" id=3]
-[ext_resource path="res://1*MtYxc1Ql6uva2z_o1JEe3w.jpeg" type="Texture" id=4]
+[ext_resource path="res://Food.jpeg" type="Texture" id=4]
 [ext_resource path="res://Level1.gd" type="Script" id=5]
 [ext_resource path="res://429593__inspectorj__chewing-breadstick-single-b.wav" type="AudioStream" id=6]
 [ext_resource path="res://StopMan.png" type="Texture" id=7]
@@ -3070,6 +3070,7 @@ position = Vector2( 472, 399.375 )
 scale = Vector2( 0.27, 0.27 )
 texture = ExtResource( 7 )
 normal_map = SubResource( 8 )
+
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
 [connection signal="body_entered" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_exited"]
