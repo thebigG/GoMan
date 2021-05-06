@@ -3126,9 +3126,6 @@ script = ExtResource( 9 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D5"]
 shape = SubResource( 9 )
 
-[node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 192, 168 )
-
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
 [connection signal="body_entered" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_exited"]
