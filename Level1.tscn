@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -11,7 +11,7 @@
 [ext_resource path="res://EneymeIntersection.gd" type="Script" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 20 )
+extents = Vector2( 10.375, 13 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -34,7 +34,10 @@ colors = PoolColorArray( 0, 0, 0, 1, 0.331926, 0.331926, 0.331926, 1, 0.383993, 
 gradient = SubResource( 7 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 8, 8 )
+extents = Vector2( 11.25, 7 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 8, 13 )
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 5 )
@@ -112,7 +115,7 @@ position = Vector2( 216, 96 )
 shape = SubResource( 3 )
 
 [node name="Area2D3" type="Area2D" parent="Intersections"]
-position = Vector2( 96, 256 )
+position = Vector2( 151, 285.625 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -3057,7 +3060,7 @@ volume_db = 0.061
 [node name="StopMan" type="RigidBody2D" parent="." groups=[
 "Enemy",
 ]]
-position = Vector2( -275, -198 )
+position = Vector2( -267, -205 )
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 8 )
@@ -3070,61 +3073,37 @@ LEFT = Vector2( -40, 0 )
 RIGHT = Vector2( 40, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan"]
-position = Vector2( 469.625, 400 )
-scale = Vector2( 0.45, 0.36 )
+position = Vector2( 493.625, 405 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="StopMan"]
 material = SubResource( 6 )
-position = Vector2( 472, 399.375 )
-scale = Vector2( 0.27, 0.27 )
+position = Vector2( 493.625, 405 )
+scale = Vector2( 0.300781, 0.25 )
 texture = ExtResource( 7 )
 normal_map = SubResource( 8 )
 
 [node name="EnemyIntersection" type="Node2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="EnemyIntersection"]
-position = Vector2( 392, 80 )
-script = ExtResource( 9 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D"]
-shape = SubResource( 9 )
-
-[node name="Area2D2" type="Area2D" parent="EnemyIntersection"]
-position = Vector2( 392, 167.375 )
-script = ExtResource( 9 )
-RIGHT = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D2"]
-shape = SubResource( 9 )
-
 [node name="Area2D3" type="Area2D" parent="EnemyIntersection"]
 position = Vector2( 192, 168 )
 scale = Vector2( 2, 2.5 )
 script = ExtResource( 9 )
-__meta__ = {
-"_edit_group_": true
-}
 DOWN = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D3"]
-position = Vector2( 2.375, 0.3 )
+position = Vector2( 30.8125, -5.34999 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 9 )
 
-[node name="Area2D4" type="Area2D" parent="EnemyIntersection"]
-position = Vector2( 312, 168 )
-script = ExtResource( 9 )
+[node name="Area2D" type="Area2D" parent="EnemyIntersection"]
+position = Vector2( 197.375, 184 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D4"]
-shape = SubResource( 9 )
-
-[node name="Area2D5" type="Area2D" parent="EnemyIntersection"]
-position = Vector2( 264, 168 )
-script = ExtResource( 9 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D5"]
-shape = SubResource( 9 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersection/Area2D"]
+shape = SubResource( 10 )
 
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
 [connection signal="body_entered" from="Intersections/Area2D2" to="GoMan" method="_on_Area2D_body_entered"]

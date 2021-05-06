@@ -14,13 +14,13 @@ var first_time = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	linear_velocity = UP
-	print('global position for stopman' + str(get_global_transform_with_canvas()))
+
 	randomize()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print('global position for stopman' + str(get_global_transform_with_canvas()))
+	print('global position for stopman' + str(get_node("CollisionShape2D").get_global_transform_with_canvas()))
 	pass
 
 
