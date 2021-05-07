@@ -20,7 +20,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print('global position for stopman' + str(get_node("CollisionShape2D").get_global_transform_with_canvas()))
+	#print('global position for stopman' + str(get_node("CollisionShape2D").get_global_transform_with_canvas()))
+	#print("$$$global position$$$:"+ str(global_position))
 	pass
 
 

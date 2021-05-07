@@ -8,12 +8,32 @@ export(int, "ENABLED", "DISABLED") var RIGHT
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	print('global position' + str(get_global_transform_with_canvas()))
+	#print('global position' + str(get_global_transform_with_canvas()))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	#print("<<global position>>:"+ str(global_position))
+	
+	if global_position == get_tree().get_nodes_in_group('Enemy')[0].global_position:
+		print("MATCH")
+	
+	else:
+		print("pos of Stopman"+ str(get_tree().get_nodes_in_group('Enemy')[0].global_position))
+	
+	pass
+
+
+func _physics_process (  delta ):
+		#print("<<global position>>:"+ str(global_position)
+	if global_position == get_tree().get_nodes_in_group('Enemy')[0].global_position:
+		print("MATCH")
+	
+	else:
+		print("pos of Stopman"+ str(get_tree().get_nodes_in_group('Enemy')[0].global_position))
+	
+	pass
+
 
 func get_direction_path():
 	var options = Array()
@@ -31,6 +51,6 @@ func get_direction_path():
 
 func _on_Area2D3_body_entered(body):
 	var direction  = get_direction_path()
-	get_tree().get_nodes_in_group('Enemy')[0].set("linear_velocity", direction)
+	#get_tree().get_nodes_in_group('Enemy')[0].set("linear_velocity", direction)
 	print(direction)
-	print('global position2:' + str(body.get_global_transform_with_canvas()))
+
