@@ -29,7 +29,7 @@ func _ready():
 
 
 func _on_Area2D_body_entered(body):
-	print("_on_Area2D_body_entered")
+#	print("_on_Area2D_body_entered")
 	can_i_move = true
 
 func _on_Area2D_body_exited(body):
