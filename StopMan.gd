@@ -14,6 +14,7 @@ var first_time = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	linear_velocity = UP
+	#linear_velocity = DOWN
 
 	randomize()
 

@@ -1,9 +1,9 @@
 extends Area2D
 
-export(int, "ENABLED", "DISABLED") var UP
-export(int, "ENABLED", "DISABLED") var DOWN
-export(int, "ENABLED", "DISABLED") var LEFT
-export(int, "ENABLED", "DISABLED") var RIGHT
+export(bool) var UP
+export(bool) var DOWN
+export(bool) var LEFT
+export(bool) var RIGHT
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,7 +11,7 @@ func _ready():
 	randomize()
 
 func is_enemy_here():
-	return global_position == get_tree().get_nodes_in_group('Enemy')[0].global_position.floor()
+	return global_position.floor() == get_tree().get_nodes_in_group('Enemy')[0].global_position.floor()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -21,6 +21,7 @@ func _process(delta):
 func _physics_process(delta):
 	if is_enemy_here():
 		var direction  = get_direction_path()
+		#get_tree().get_nodes_in_group('Enemy')[0].set("global_position", global_position)
 		get_tree().get_nodes_in_group('Enemy')[0].set("linear_velocity", direction)
 		
 	
@@ -28,13 +29,13 @@ func _physics_process(delta):
 
 func get_direction_path():
 	var options = Array()
-	if UP == 0:
+	if UP:
 		options.append( get_tree().get_nodes_in_group('Enemy')[0].get('UP'))
-	if DOWN == 0:
+	if DOWN:
 		options.append(get_tree().get_nodes_in_group('Enemy')[0].get('DOWN'))
-	if LEFT == 0:
+	if LEFT:
 		options.append(get_tree().get_nodes_in_group('Enemy')[0].get('LEFT'))
-	if RIGHT == 0:
+	if RIGHT:
 		options.append(get_tree().get_nodes_in_group('Enemy')[0].get('RIGHT'))
 		
 	var option_index  = randi() % options.size()
