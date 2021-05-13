@@ -8,7 +8,7 @@
 [ext_resource path="res://429593__inspectorj__chewing-breadstick-single-b.wav" type="AudioStream" id=6]
 [ext_resource path="res://StopMan.png" type="Texture" id=7]
 [ext_resource path="res://StopMan.gd" type="Script" id=8]
-[ext_resource path="res://EneymeIntersection.gd" type="Script" id=9]
+[ext_resource path="res://EnemyIntersection.gd" type="Script" id=9]
 [ext_resource path="res://GoMan-Soundtrack.wav" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -3259,7 +3259,7 @@ __meta__ = {
 }
 UP = true
 DOWN = true
-RIGHT = true
+LEFT = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersections/Area2D6"]
 shape = SubResource( 4 )
@@ -3349,7 +3349,7 @@ __meta__ = {
 }
 UP = true
 DOWN = true
-RIGHT = true
+LEFT = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersections/Area2D35"]
 shape = SubResource( 4 )
