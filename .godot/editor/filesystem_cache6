@@ -1,0 +1,19 @@
+3844edc3d1660e6e25a999aafc25a878
+::res://::1620697245
+429593__inspectorj__chewing-breadstick-single-b.wav::AudioStreamSample::1616457096::1620697247::1::::<><>::
+default_env.tres::Environment::1620608215::0::1::::<><>::
+EneymeIntersection.gd::GDScript::1620605259::0::1::::<><>::
+external-content.duckduckgo.com.jpeg::StreamTexture2D::1616457096::1620697247::1::::<><>::
+Food.jpeg::StreamTexture2D::1616457096::1620697247::1::::<><>::
+Food.tres::TileSet::1619743480::0::1::::<><>::res://Food.jpeg
+Food.tscn::PackedScene::1619743480::0::1::::<><>::res://Food.gd<>res://Food.jpeg
+Froots N Veggies.png::StreamTexture2D::1616457096::1620697247::1::::<><>::
+GoMan.gd::GDScript::1620523874::0::1::::<>KinematicBody2D<>::
+icon.png::StreamTexture2D::1616457096::1620697247::1::::<><>::
+kissclipart-yellow-circle-no-background-clipart-yellow-color-w-9b6312df55568e4f.jpg::StreamTexture2D::1616457096::1620697247::1::::<><>::
+Level1.gd::GDScript::1616457096::0::1::::<>Node2D<>::
+Level1.tscn::PackedScene::1620608215::0::1::::<><>::res://Walls.tscn<>res://icon.png<>res://GoMan.gd<>res://Food.jpeg<>res://Level1.gd<>res://429593__inspectorj__chewing-breadstick-single-b.wav<>res://StopMan.png<>res://StopMan.gd<>res://EneymeIntersection.gd
+pacman.jpg::StreamTexture2D::1618792460::1620697247::1::::<><>::
+StopMan.gd::GDScript::1620606117::0::1::::<><>::
+StopMan.png::StreamTexture2D::1619382573::1620697247::1::::<><>::
+Walls.tscn::PackedScene::1619912855::0::1::::<><>::res://external-content.duckduckgo.com.jpeg
