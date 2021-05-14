@@ -11,7 +11,12 @@ func _ready():
 	randomize()
 
 func is_enemy_here():
-	return global_position.floor() == get_tree().get_nodes_in_group('Enemy')[0].global_position.floor()
+	var who_is_it = Array()
+	for enemy in get_tree().get_nodes_in_group('Enemy'):
+		if  global_position.floor() == enemy.global_position.floor():
+			who_is_it.append(enemy)
+			
+	return who_is_it
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -19,10 +24,11 @@ func _process(delta):
 
 
 func _physics_process(delta):
-	if is_enemy_here():
+	
+	for enemy in is_enemy_here():
 		var direction  = get_direction_path()
 		#get_tree().get_nodes_in_group('Enemy')[0].set("global_position", global_position)
-		get_tree().get_nodes_in_group('Enemy')[0].set("linear_velocity", direction)
+		enemy.set("linear_velocity", direction)
 		
 	
 
