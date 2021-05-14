@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://StopMan.gd" type="Script" id=8]
 [ext_resource path="res://EnemyIntersection.gd" type="Script" id=9]
 [ext_resource path="res://GoMan-Soundtrack.wav" type="AudioStream" id=10]
+[ext_resource path="res://yay.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.375, 13 )
@@ -3213,7 +3214,6 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_group_": true
 }
-UP = true
 DOWN = true
 LEFT = true
 RIGHT = true
@@ -3678,5 +3678,8 @@ texture = ExtResource( 7 )
 stream = ExtResource( 10 )
 autoplay = true
 attenuation = 0.133972
+
+[node name="YAY" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
 
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]

@@ -10,7 +10,7 @@ func _ready():
 	# New random seed
 	randomize()
 
-func is_enemy_here():
+func get_enemies_here():
 	var who_is_it = Array()
 	for enemy in get_tree().get_nodes_in_group('Enemy'):
 		if  global_position.floor() == enemy.global_position.floor():
@@ -24,15 +24,11 @@ func _process(delta):
 
 
 func _physics_process(delta):
-	
-	for enemy in is_enemy_here():
+	for enemy in get_enemies_here():
 		var direction  = get_direction_path()
-		#get_tree().get_nodes_in_group('Enemy')[0].set("global_position", global_position)
 		enemy.set("linear_velocity", direction)
 		
 	
-
-
 func get_direction_path():
 	var options = Array()
 	if UP:
