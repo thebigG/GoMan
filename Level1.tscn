@@ -3016,7 +3016,6 @@ __meta__ = {
 "_edit_group_": true
 }
 UP = true
-DOWN = true
 LEFT = true
 RIGHT = true
 
@@ -3506,7 +3505,6 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_group_": true
 }
-UP = true
 DOWN = true
 RIGHT = true
 
@@ -3671,6 +3669,28 @@ RIGHT = Vector2( 40, 0 )
 shape = SubResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="StopMan2"]
+scale = Vector2( 0.26914, 0.275 )
+texture = ExtResource( 7 )
+
+[node name="StopMan3" type="RigidBody2D" parent="." groups=[
+"Enemy",
+]]
+position = Vector2( 192, 200 )
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+UP = Vector2( 0, -40 )
+DOWN = Vector2( 0, 40 )
+LEFT = Vector2( -40, 0 )
+RIGHT = Vector2( 40, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan3"]
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="StopMan3"]
 scale = Vector2( 0.26914, 0.275 )
 texture = ExtResource( 7 )
 
