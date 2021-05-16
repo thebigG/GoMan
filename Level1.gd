@@ -20,7 +20,7 @@ func _ready():
 
 
 func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
-	print("_on_Mouth_area_shape_entered")
+	print("_on_Mouth_area_shape_entered000000")
 	if area.is_in_group("Food"):
 		area.queue_free()
 		$FoodSound.play()

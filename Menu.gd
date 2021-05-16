@@ -19,6 +19,9 @@ func _ready():
 
 func _on_Button_pressed():
 	print("Start!")
-	get_parent().add_child(Level1.instance())
+	var new_level = Level1.instance()
+	get_parent().add_child(new_level)
+
 	print("get_parent:" + str(get_parent()))
+
 	queue_free()

@@ -3811,12 +3811,11 @@ shape = SubResource( 9 )
 scale = Vector2( 0.26914, 0.275 )
 texture = ExtResource( 3 )
 
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 2 )
-autoplay = true
-attenuation = 0.133972
-
 [node name="YAY" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
 
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
