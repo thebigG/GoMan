@@ -2,6 +2,7 @@ extends CanvasLayer
 
 signal start_game
 
+export(PackedScene) var Level1
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -17,4 +18,7 @@ func _ready():
 
 
 func _on_Button_pressed():
-	emit_signal("start_game")
+	print("Start!")
+	get_parent().add_child(Level1.instance())
+	print("get_parent:" + str(get_parent()))
+	queue_free()
