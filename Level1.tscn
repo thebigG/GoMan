@@ -1,9 +1,20 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Level1.gd" type="Script" id=5]
+[ext_resource path="res://GoManLevel1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Main.gd" type="Script" id=5]
 [ext_resource path="res://Menu.tscn" type="PackedScene" id=12]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 5 )
+Level1 = ExtResource( 1 )
 
 [node name="Menu" parent="." instance=ExtResource( 12 )]
+script = null
+
+[node name="Score" parent="Menu" index="2"]
+margin_top = 392.0
+margin_bottom = 435.0
+
+[connection signal="pressed" from="Menu/StartButton" to="." method="_on_Button_pressed"]
+
+[editable path="Menu"]

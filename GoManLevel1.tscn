@@ -11,7 +11,7 @@
 [ext_resource path="res://429593__inspectorj__chewing-breadstick-single-b.wav" type="AudioStream" id=9]
 [ext_resource path="res://GoMan.gd" type="Script" id=10]
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Level1.gd" type="Script" id=12]
+[ext_resource path="res://Main.gd" type="Script" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 144, 8, 0, 8, 0, 0, 144, 0 )

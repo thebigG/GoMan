@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://GoManLevel1.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Theme" id=1]
 
@@ -14,9 +13,8 @@ font_data = ExtResource( 2 )
 
 [node name="Menu" type="CanvasLayer"]
 script = ExtResource( 1 )
-Level1 = ExtResource( 3 )
 
-[node name="Button" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="."]
 margin_left = 128.0
 margin_top = 168.0
 margin_right = 264.0
@@ -29,7 +27,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 margin_left = 128.0
 margin_top = 32.0
 margin_right = 264.0
@@ -43,4 +41,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[node name="Score" type="Label" parent="."]
+margin_left = 280.0
+margin_top = 368.0
+margin_right = 416.0
+margin_bottom = 411.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 0.913725, 0, 1 )
+text = "Food:
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="StartButton" to="." method="_on_Button_pressed"]
