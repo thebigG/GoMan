@@ -4,7 +4,9 @@
 [ext_resource path="res://Main.gd" type="Script" id=5]
 [ext_resource path="res://Menu.tscn" type="PackedScene" id=12]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" groups=[
+"Menu",
+]]
 script = ExtResource( 5 )
 Level1 = ExtResource( 1 )
 
