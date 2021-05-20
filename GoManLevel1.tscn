@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://EnemyIntersection.gd" type="Script" id=1]
 [ext_resource path="res://GoMan-Soundtrack.wav" type="AudioStream" id=2]
@@ -141,6 +141,8 @@ extents = Vector2( 159.999, 79.999 )
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 2, 6 )
+
+[sub_resource type="RectangleShape2D" id=10]
 
 [node name="Level1" type="Node"]
 script = ExtResource( 12 )
@@ -3767,6 +3769,13 @@ shape = SubResource( 9 )
 scale = Vector2( 0.26914, 0.275 )
 texture = ExtResource( 3 )
 
+[node name="Area2D" type="Area2D" parent="StopMan" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan/Area2D"]
+shape = SubResource( 10 )
+
 [node name="StopMan2" type="RigidBody2D" parent="." groups=[
 "Enemy",
 ]]
@@ -3789,6 +3798,13 @@ shape = SubResource( 9 )
 scale = Vector2( 0.26914, 0.275 )
 texture = ExtResource( 3 )
 
+[node name="Area2D" type="Area2D" parent="StopMan2" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan2/Area2D"]
+shape = SubResource( 10 )
+
 [node name="StopMan3" type="RigidBody2D" parent="." groups=[
 "Enemy",
 ]]
@@ -3810,6 +3826,13 @@ shape = SubResource( 9 )
 [node name="Sprite" type="Sprite" parent="StopMan3"]
 scale = Vector2( 0.26914, 0.275 )
 texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="StopMan3" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan3/Area2D"]
+shape = SubResource( 10 )
 
 [node name="YAY" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )

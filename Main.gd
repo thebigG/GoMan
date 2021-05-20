@@ -8,7 +8,14 @@ signal start_game
 export(PackedScene) var Level1
 var level_handle
 
-onready var Menu  = $Menu
+
+func lose_1_life():
+	var lives = get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Lives")
+	lives.remove_child(lives.get_child(lives.get_child_count()-1))
+	#TODO: The sound effect sounds wauy too low
+	get_tree().get_nodes_in_group("Menu")[0].get_node("Dead").play()
+	
+
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -35,6 +42,12 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 		get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Score").text =  "Food:" + str(current_food_count)
 		if current_food_count == total_food_count:
 			$YAY.play()
+	else:
+		print("ELSE")
+	if area.is_in_group("Enemy"):
+		print("Enemy")
+		lose_1_life()
+	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

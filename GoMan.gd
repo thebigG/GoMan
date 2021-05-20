@@ -3,6 +3,7 @@ extends KinematicBody2D
 var current_direction = Vector2()
 var can_i_move = true
 
+
 func _physics_process(delta):
 	if can_i_move == true:
 		if Input.is_action_pressed("ui_right"):

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://GoManLevel1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://blue-heart.png" type="Texture" id=2]
+[ext_resource path="res://Lost A Life.mp3" type="AudioStream" id=3]
 [ext_resource path="res://Main.gd" type="Script" id=5]
 [ext_resource path="res://Menu.tscn" type="PackedScene" id=12]
 
@@ -34,6 +35,9 @@ texture = ExtResource( 2 )
 position = Vector2( 48, 412 )
 scale = Vector2( 0.0252907, 0.0233108 )
 texture = ExtResource( 2 )
+
+[node name="Dead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="pressed" from="Menu/StartButton" to="." method="_on_Button_pressed"]
 
