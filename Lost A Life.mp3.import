@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Lost A Life.mp3-31e4e4f1dc0c75d3883f099301ef3d58.mp3
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -12,8 +12,17 @@ var level_handle
 func lose_1_life():
 	var lives = get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Lives")
 	lives.remove_child(lives.get_child(lives.get_child_count()-1))
-	#TODO: The sound effect sounds wauy too low
+	$Music.stop()
 	get_tree().get_nodes_in_group("Menu")[0].get_node("Dead").play()
+#	reset game
+#	Perhaps have a timeout here??
+	# For some reason the position of StopMan nodes is not working...
+	$StopMan.set("position", Vector2($StopManOrigin.get("position")))	
+	$StopMan2.set("position", Vector2($StopManOrigin.get("position")))	
+	$StopMan3.set("position", Vector2($StopManOrigin.get("position")))	
+	$GoMan.set("position", Vector2($GoManOrigin.get("position")))	
+	$Music.play()
+	
 	
 
 

@@ -3841,4 +3841,10 @@ stream = ExtResource( 8 )
 stream = ExtResource( 2 )
 autoplay = true
 
+[node name="GoManOrigin" type="Position2D" parent="."]
+position = Vector2( 234.375, 263.375 )
+
+[node name="StopManOrigin" type="Position2D" parent="."]
+position = Vector2( 192, 200 )
+
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
