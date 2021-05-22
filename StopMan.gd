@@ -5,25 +5,35 @@ export (Vector2) var DOWN
 export (Vector2) var LEFT
 export (Vector2) var RIGHT
 
-var first_time = true
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+var set_to_origin = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	linear_velocity = UP
-	#linear_velocity = DOWN
-
+	restart_stopman()
 	randomize()
 
 
+func reset_to_origin():
+	set_to_origin = true
+
+func move_to_origin():
+		set("linear_velocity", Vector2(0,0))	
+		set("linear_velocity", Vector2(0,0))
+		set("linear_velocity", Vector2(0,0))	
+		set("position", Vector2(get_tree().get_nodes_in_group("Origin")[1].get("position")))	
+		set("position", Vector2(get_tree().get_nodes_in_group("Origin")[1].get("position")))	
+		set("position", Vector2(get_tree().get_nodes_in_group("Origin")[1].get("position")))
+
+func restart_stopman():
+	move_to_origin()
+	linear_velocity = UP
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	#print('global position for stopman' + str(get_node("CollisionShape2D").get_global_transform_with_canvas()))
-	#print("$$$global position$$$:"+ str(global_position))
-	pass
+	if set_to_origin:
+		restart_stopman()
+		set_to_origin = false
+	
 
 
 func _on_Area2D3_body_entered(body):

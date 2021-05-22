@@ -3841,10 +3841,15 @@ stream = ExtResource( 8 )
 stream = ExtResource( 2 )
 autoplay = true
 
-[node name="GoManOrigin" type="Position2D" parent="."]
+[node name="GoManOrigin" type="Position2D" parent="." groups=[
+"Origin",
+]]
 position = Vector2( 234.375, 263.375 )
 
-[node name="StopManOrigin" type="Position2D" parent="."]
+[node name="StopManOrigin" type="Position2D" parent="." groups=[
+"Origin",
+]]
 position = Vector2( 192, 200 )
 
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
+[connection signal="area_entered" from="EnemyIntersections/Area2D" to="EnemyIntersections/Area2D" method="_on_Area2D_area_entered"]

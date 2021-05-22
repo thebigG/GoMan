@@ -5,6 +5,8 @@ export(bool) var DOWN
 export(bool) var LEFT
 export(bool) var RIGHT
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# New random seed
@@ -22,12 +24,10 @@ func get_enemies_here():
 func _process(delta):
 	pass
 
-
 func _physics_process(delta):
 	for enemy in get_enemies_here():
 		var direction  = get_direction_path()
 		enemy.set("linear_velocity", direction)
-		
 	
 func get_direction_path():
 	var options = Array()
