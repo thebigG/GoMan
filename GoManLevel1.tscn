@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://EnemyIntersection.gd" type="Script" id=1]
 [ext_resource path="res://GoMan-Soundtrack.wav" type="AudioStream" id=2]
@@ -12,6 +12,9 @@
 [ext_resource path="res://GoMan.gd" type="Script" id=10]
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Main.gd" type="Script" id=12]
+[ext_resource path="res://StopMan1.gd" type="Script" id=13]
+[ext_resource path="res://StopMan2.gd" type="Script" id=14]
+[ext_resource path="res://StopMan3.gd" type="Script" id=15]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 144, 8, 0, 8, 0, 0, 144, 0 )
@@ -144,7 +147,9 @@ extents = Vector2( 2, 6 )
 
 [sub_resource type="RectangleShape2D" id=10]
 
-[node name="Level1" type="Node"]
+[node name="Level1" type="Node" groups=[
+"Level1",
+]]
 script = ExtResource( 12 )
 
 [node name="Walls" parent="." instance=ExtResource( 11 )]
@@ -3747,93 +3752,6 @@ RIGHT = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersections/Area2D27"]
 shape = SubResource( 8 )
 
-[node name="StopMan" type="RigidBody2D" parent="." groups=[
-"Enemy",
-]]
-position = Vector2( 192, 200 )
-collision_mask = 0
-gravity_scale = 0.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
-UP = Vector2( 0, -40 )
-DOWN = Vector2( 0, 40 )
-LEFT = Vector2( -40, 0 )
-RIGHT = Vector2( 40, 0 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan"]
-shape = SubResource( 9 )
-
-[node name="Sprite" type="Sprite" parent="StopMan"]
-scale = Vector2( 0.26914, 0.275 )
-texture = ExtResource( 3 )
-
-[node name="Area2D" type="Area2D" parent="StopMan" groups=[
-"Enemy",
-]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan/Area2D"]
-shape = SubResource( 10 )
-
-[node name="StopMan2" type="RigidBody2D" parent="." groups=[
-"Enemy",
-]]
-position = Vector2( 192, 200 )
-collision_mask = 0
-gravity_scale = 0.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
-UP = Vector2( 0, -40 )
-DOWN = Vector2( 0, 40 )
-LEFT = Vector2( -40, 0 )
-RIGHT = Vector2( 40, 0 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan2"]
-shape = SubResource( 9 )
-
-[node name="Sprite" type="Sprite" parent="StopMan2"]
-scale = Vector2( 0.26914, 0.275 )
-texture = ExtResource( 3 )
-
-[node name="Area2D" type="Area2D" parent="StopMan2" groups=[
-"Enemy",
-]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan2/Area2D"]
-shape = SubResource( 10 )
-
-[node name="StopMan3" type="RigidBody2D" parent="." groups=[
-"Enemy",
-]]
-position = Vector2( 192, 200 )
-collision_mask = 0
-gravity_scale = 0.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
-UP = Vector2( 0, -40 )
-DOWN = Vector2( 0, 40 )
-LEFT = Vector2( -40, 0 )
-RIGHT = Vector2( 40, 0 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan3"]
-shape = SubResource( 9 )
-
-[node name="Sprite" type="Sprite" parent="StopMan3"]
-scale = Vector2( 0.26914, 0.275 )
-texture = ExtResource( 3 )
-
-[node name="Area2D" type="Area2D" parent="StopMan3" groups=[
-"Enemy",
-]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMan3/Area2D"]
-shape = SubResource( 10 )
-
 [node name="YAY" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
 
@@ -3850,6 +3768,96 @@ position = Vector2( 234.375, 263.375 )
 "Origin",
 ]]
 position = Vector2( 192, 200 )
+
+[node name="StopMen" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="StopMan1" type="RigidBody2D" parent="StopMen" groups=[
+"Enemy",
+]]
+position = Vector2( 192, 200 )
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+UP = Vector2( 0, -40 )
+DOWN = Vector2( 0, 40 )
+LEFT = Vector2( -40, 0 )
+RIGHT = Vector2( 40, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan1"]
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="StopMen/StopMan1"]
+scale = Vector2( 0.26914, 0.275 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="StopMen/StopMan1" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan1/Area2D"]
+shape = SubResource( 10 )
+
+[node name="StopMan2" type="RigidBody2D" parent="StopMen" groups=[
+"Enemy",
+]]
+position = Vector2( 192, 200 )
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+UP = Vector2( 0, -40 )
+DOWN = Vector2( 0, 40 )
+LEFT = Vector2( -40, 0 )
+RIGHT = Vector2( 40, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan2"]
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="StopMen/StopMan2"]
+scale = Vector2( 0.26914, 0.275 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="StopMen/StopMan2" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan2/Area2D"]
+shape = SubResource( 10 )
+
+[node name="StopMan3" type="RigidBody2D" parent="StopMen" groups=[
+"Enemy",
+]]
+position = Vector2( 192, 200 )
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_group_": true
+}
+UP = Vector2( 0, -40 )
+DOWN = Vector2( 0, 40 )
+LEFT = Vector2( -40, 0 )
+RIGHT = Vector2( 40, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan3"]
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="StopMen/StopMan3"]
+scale = Vector2( 0.26914, 0.275 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="StopMen/StopMan3" groups=[
+"Enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StopMen/StopMan3/Area2D"]
+shape = SubResource( 10 )
 
 [connection signal="area_shape_entered" from="GoMan/Mouth" to="." method="_on_Mouth_area_shape_entered"]
 [connection signal="area_entered" from="EnemyIntersections/Area2D" to="EnemyIntersections/Area2D" method="_on_Area2D_area_entered"]

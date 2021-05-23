@@ -6,36 +6,40 @@ var current_food_count = 0
 signal start_game
 
 export(PackedScene) var Level1
-var level_handle
 var life_count = 3
 
 signal enemy_stop
 
+var stop_man_origin_count = 0
+export var STOPMAN_COUNT = 3
+
 func lose_1_life():
-	# Handle case when StopMan collides with multiple stopmen at the same time
-	# GoMan should still only lose 1 life, if it comes in contact with more than 1 enemy
-	if life_count > 0:
+	if life_count > 0 and !get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"):
+		print(get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"))
+		print("stop_man_origin_count:" + str(stop_man_origin_count))
 		var lives = get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Lives")
 		lives.remove_child(lives.get_child(lives.get_child_count()-1))
 		$Music.stop()
 		get_tree().get_nodes_in_group("Menu")[0].get_node("Dead").play()
 	#	reset game
 	#	Perhaps have a timeout here??
-
 		get_tree().get_nodes_in_group("Menu")[0].emit_signal("enemy_stop")
+		
+		
 
 		$GoMan.set("position", Vector2($GoManOrigin.get("position")))	
 		$Music.play()
 	else:
 		print("Game Over!")
+		#TODO: Delete the current level1, otherwise we get infinite worlds.
+		#Wait a minute...It's a a feature, NOT a bug!
+		get_tree().reload_current_scene()
 		
 	life_count = life_count -1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-	#$Score.text = "Food:" + str(total_food_count)
-
 
 func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 	if area.is_in_group("Food"):
@@ -50,12 +54,10 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 		lose_1_life()
 		
 func _on_Button_pressed():
-	level_handle = Level1.instance()
+	var level_handle = Level1.instance()
 	get_parent().add_child(level_handle)
 	
-	connect("enemy_stop", level_handle.get_node("StopMan"),  "reset_to_origin")	
-	connect("enemy_stop", level_handle.get_node("StopMan2"),  "reset_to_origin")	
-	connect("enemy_stop", level_handle.get_node("StopMan3"),  "reset_to_origin")	
+	connect("enemy_stop", level_handle.get_node("StopMen"),  "reset_to_origin")	
 	
 	total_food_count = get_tree().get_nodes_in_group('Food').size()
 	$Menu.get_node("Score").text =  "Food:" + str(0)

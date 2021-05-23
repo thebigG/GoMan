@@ -32,7 +32,7 @@ func _physics_process(delta):
 func get_direction_path():
 	var options = Array()
 	if UP:
-		options.append( get_tree().get_nodes_in_group('Enemy')[0].get('UP'))
+		options.append(get_tree().get_nodes_in_group('Enemy')[0].get('UP'))
 	if DOWN:
 		options.append(get_tree().get_nodes_in_group('Enemy')[0].get('DOWN'))
 	if LEFT:
