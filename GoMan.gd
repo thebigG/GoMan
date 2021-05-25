@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var current_direction = Vector2()
-export var speed = 5
+export var speed = 1
 
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):

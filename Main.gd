@@ -25,15 +25,13 @@ func lose_1_life():
 	#	Perhaps have a timeout here??
 		get_tree().get_nodes_in_group("Menu")[0].emit_signal("enemy_stop")
 		
-		
-
 		$GoMan.set("position", Vector2($GoManOrigin.get("position")))	
 		$Music.play()
 	else:
 		print("Game Over!")
 		#TODO: Delete the current level1, otherwise we get infinite worlds.
 		#Wait a minute...It's a a feature, NOT a bug!
-		get_tree().reload_current_scene()
+		game_over()
 		
 	life_count = life_count -1
 
@@ -47,20 +45,27 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 		$FoodSound.play()
 		current_food_count += 1
 
-		get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Score").text =  "Food:" + str(current_food_count)
+		get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/StartMenu/Score").text =  "Food:" + str(current_food_count)
 		if current_food_count == total_food_count:
 			$YAY.play()
 	if area.is_in_group("Enemy"):
 		lose_1_life()
-		
-func _on_Button_pressed():
+
+func _on_StartButton_pressed():
 	var level_handle = Level1.instance()
 	get_parent().add_child(level_handle)
 	
 	connect("enemy_stop", level_handle.get_node("StopMen"),  "reset_to_origin")	
 	
 	total_food_count = get_tree().get_nodes_in_group('Food').size()
-	$Menu.get_node("Score").text =  "Food:" + str(0)
-	$Menu.get_node("StartButton").set("visible", false)
-	$Menu.get_node("Title").set("visible", false)
+	
+	total_food_count = get_tree().get_nodes_in_group('Food').size()
+	$Menu/StartMenu.get_node("Score").text =  "Food:" + str(0)
+	$Menu/StartMenu.get_node("StartButton").set("visible", false)
+	$Menu/StartMenu.get_node("Title").set("visible", false)
 
+func game_over():
+#	Not working properly at the moment
+	$GameOverMenu.set("visible", true)
+#	queue_free()
+#	get_tree().reload_current_scene()

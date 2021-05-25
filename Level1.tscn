@@ -15,10 +15,6 @@ Level1 = ExtResource( 1 )
 [node name="Menu" parent="." instance=ExtResource( 12 )]
 script = null
 
-[node name="Score" parent="Menu" index="2"]
-margin_top = 392.0
-margin_bottom = 435.0
-
 [node name="Lives" type="Node" parent="Menu"]
 
 [node name="Life1" type="Sprite" parent="Menu/Lives"]
@@ -39,6 +35,6 @@ texture = ExtResource( 2 )
 [node name="Dead" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
-[connection signal="pressed" from="Menu/StartButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Menu/StartMenu/StartButton" to="." method="_on_StartButton_pressed"]
 
 [editable path="Menu"]
