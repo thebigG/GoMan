@@ -66,6 +66,6 @@ func _on_StartButton_pressed():
 
 func game_over():
 #	Not working properly at the moment
-	$GameOverMenu.set("visible", true)
+	get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/GameOverMenu").set("visible", true)
 #	queue_free()
 #	get_tree().reload_current_scene()
