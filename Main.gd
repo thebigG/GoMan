@@ -14,7 +14,15 @@ var stop_man_origin_count = 0
 export var STOPMAN_COUNT = 3
 
 func lose_1_life():
-	if life_count > 0 and !get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"):
+	
+	if life_count <= 0:
+		print("Game Over!:" + str(life_count))
+		
+		#TODO: Delete the current level1, otherwise we get infinite worlds.
+		#Wait a minute...It's a feature, NOT a bug!
+		game_over()
+		
+	elif life_count > 0 and !get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"):
 		print(get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"))
 		print("stop_man_origin_count:" + str(stop_man_origin_count))
 		var lives = get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Lives")
@@ -27,13 +35,9 @@ func lose_1_life():
 		
 		$GoMan.set("position", Vector2($GoManOrigin.get("position")))	
 		$Music.play()
-	else:
-		print("Game Over!")
-		#TODO: Delete the current level1, otherwise we get infinite worlds.
-		#Wait a minute...It's a a feature, NOT a bug!
-		game_over()
+		life_count = life_count -1
+	
 		
-	life_count = life_count -1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -51,7 +55,8 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 	if area.is_in_group("Enemy"):
 		lose_1_life()
 
-func _on_StartButton_pressed():
+
+func start_game():
 	var level_handle = Level1.instance()
 	get_parent().add_child(level_handle)
 	
@@ -64,8 +69,24 @@ func _on_StartButton_pressed():
 	$Menu/StartMenu.get_node("StartButton").set("visible", false)
 	$Menu/StartMenu.get_node("Title").set("visible", false)
 
+func _on_StartButton_pressed():
+	start_game()
+
 func game_over():
-#	Not working properly at the moment
 	get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/GameOverMenu").set("visible", true)
-#	queue_free()
+	print("Game over")
+#	restart_game()
+
+func restart_game():
+#	queue_free()"res://Level1.tscn"
+	queue_free()
+	print("loading scene")
+	var scene = load("res://Level1.tscn") 
+	add_child(scene.instance())
+#	start_game()
+#	get_node("Level1")
 #	get_tree().reload_current_scene()
+
+
+func _on_TryAgainButton_pressed():
+	restart_game()

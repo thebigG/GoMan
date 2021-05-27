@@ -102,4 +102,4 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="StartMenu/StartButton" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="GameOverMenu/TryAgainButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="GameOverMenu/TryAgainButton" to="." method="_on_TryAgainButton_pressed"]
