@@ -10,10 +10,14 @@
 "Menu",
 ]]
 script = ExtResource( 5 )
-Level1 = ExtResource( 1 )
+Level100 = ExtResource( 1 )
 
 [node name="Menu" parent="." instance=ExtResource( 12 )]
 script = null
+
+[node name="Title" parent="Menu/GameOverMenu" index="1"]
+margin_left = 128.0
+margin_right = 264.0
 
 [node name="Lives" type="Node" parent="Menu"]
 
@@ -36,5 +40,6 @@ texture = ExtResource( 2 )
 stream = ExtResource( 3 )
 
 [connection signal="pressed" from="Menu/StartMenu/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Menu/GameOverMenu/TryAgainButton" to="." method="_on_TryAgainButton_pressed"]
 
 [editable path="Menu"]

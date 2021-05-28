@@ -5,7 +5,7 @@ var current_food_count = 0
 
 signal start_game
 
-export(PackedScene) var Level1
+export(PackedScene) var Level100
 var life_count = 3
 
 signal enemy_stop
@@ -57,7 +57,7 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 
 
 func start_game():
-	var level_handle = Level1.instance()
+	var level_handle = Level100.instance()
 	get_parent().add_child(level_handle)
 	
 	connect("enemy_stop", level_handle.get_node("StopMen"),  "reset_to_origin")	
@@ -70,22 +70,19 @@ func start_game():
 	$Menu/StartMenu.get_node("Title").set("visible", false)
 
 func _on_StartButton_pressed():
+	print('Start Button Pressed')
 	start_game()
 
 func game_over():
+	print("GameOver1")
+	get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/StartMenu").queue_free()
+	queue_free()
 	get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/GameOverMenu").set("visible", true)
-	print("Game over")
-#	restart_game()
+	print("Game over2")
 
 func restart_game():
-#	queue_free()"res://Level1.tscn"
 	queue_free()
-	print("loading scene")
-	var scene = load("res://Level1.tscn") 
-	add_child(scene.instance())
-#	start_game()
-#	get_node("Level1")
-#	get_tree().reload_current_scene()
+	get_tree().reload_current_scene()
 
 
 func _on_TryAgainButton_pressed():
