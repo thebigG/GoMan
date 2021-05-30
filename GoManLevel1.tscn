@@ -3352,9 +3352,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-UP = true
 DOWN = true
-RIGHT = true
+LEFT = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyIntersections/Area2D14"]
 shape = SubResource( 8 )
