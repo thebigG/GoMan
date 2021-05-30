@@ -3339,7 +3339,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-DOWN = true
+UP = true
 LEFT = true
 RIGHT = true
 
