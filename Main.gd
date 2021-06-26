@@ -18,8 +18,6 @@ func lose_1_life():
 		game_over()
 		
 	elif life_count > 0 and !get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"):
-		print(get_tree().get_nodes_in_group("Level1")[0].get_node("StopMen").get("set_to_origin"))
-		print("stop_man_origin_count:" + str(stop_man_origin_count))
 		var lives = get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/Lives")
 		lives.remove_child(lives.get_child(lives.get_child_count()-1))
 		$Music.stop()
@@ -40,14 +38,10 @@ func _on_Mouth_area_shape_entered(area_id, area, area_shape, self_shape):
 		area.queue_free()
 		$FoodSound.play()
 		current_food_count += 1
-		print("current food count:" + str(current_food_count))
-		
-		print("total_food_count" + str(total_food_count)) 
 
 		get_tree().get_nodes_in_group("Menu")[0].get_node("Menu/StartMenu/Score").text =  "Food:" + str(current_food_count)
 		if current_food_count == get_tree().get_nodes_in_group("Menu")[0].get("total_food_count"):
 			$YAY.play()
-			print("YAY!")
 			game_over()
 	elif area.is_in_group("Enemy"):
 		lose_1_life()
@@ -62,7 +56,6 @@ func start_game():
 	total_food_count = get_tree().get_nodes_in_group('Food').size()
 	
 	
-	print("total_food_count:" + str(total_food_count))
 	$Menu/StartMenu.get_node("Score").text =  "Food:" + str(0)
 	$Menu/StartMenu.get_node("StartButton").set("visible", false)
 	$Menu/StartMenu.get_node("Title").set("visible", false)
